@@ -1,0 +1,82 @@
+:root {
+    --bg: #282828;
+
+    --red: #cc241d;
+    --green: #98971a;
+    --yellow: #d79921;
+    --blue: #458588;
+    --purple: #b16286;
+    --aqua: #689d6a;
+    --gray: #a89984;
+    --orange: #d65d0e;
+    --fg: #ebdbb2;
+}
+
+body {
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style-type: none;
+    padding-right: 14px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+
+    color: var(--fg);
+
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--red);
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 54px;
+
+    color: var(--fg);
+}
+
+.arrow {
+    color: var(--yellow);
+}
+
+.name {
+    color: var(--red);
+}
+
+@keyframes cursor {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+
+.cursor {
+  font-size: 60px;
+
+  color: var(--gray);
+
+  -webkit-animation: cursor .9s linear infinite;
+  -moz-animation: cursor .9s linear infinite;
+  -ms-animation: cursor .9s linear infinite;
+  -o-animation: cursor .9s linear infinite;
+  animation: cursor .9s linear infinite;
+}
